@@ -29,8 +29,8 @@ Android Studio: http://developer.android.com/sdk/index.html
 ##Запуск
 
 Тестирование приложение можно делать следующими способами:
-*Физическое устройство на андроид ( (Док)[http://developer.android.com/tools/device.html] )
-*Стандартные эмуляторы (Если (ругается на Intel Hax Kernel Model)[http://stackoverflow.com/questions/26355645/error-in-launching-avd] , (путь к SDK)[http://stackoverflow.com/questions/16581752/android-studio-how-to-change-android-sdk-path] )
-*Прочие эмуляторы (например (GenyMotion)[https://www.genymotion.com] )
+*Физическое устройство на андроид ( [Док](http://developer.android.com/tools/device.html) )
+*Стандартные эмуляторы (Если [ругается на Intel Hax Kernel Model](http://stackoverflow.com/questions/26355645/error-in-launching-avd) , [путь к SDK](http://stackoverflow.com/questions/16581752/android-studio-how-to-change-android-sdk-path) )
+*Прочие эмуляторы (например [GenyMotion](https://www.genymotion.com) )
 
 
