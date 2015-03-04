@@ -43,7 +43,7 @@ Android Studio: http://developer.android.com/sdk/index.html
  
  Пример подключения внешних библиотек
  ```Java
-     compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.parse.bolts:bolts-android:1.+'
     compile 'com.google.android.gms:play-services:6.+'
 ```
