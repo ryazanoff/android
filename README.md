@@ -34,6 +34,6 @@ Android Studio: http://developer.android.com/sdk/index.html
   * Прочие эмуляторы (например [GenyMotion](https://www.genymotion.com) )
 
 Полезные сайты:
- * [Доки разработчика](http://developer.anroid.com)
+ * [Доки разработчика](http://developer.android.com)
  * [Климов](http://developer.alexanderklimov.ru/android/)
  * [StartAndroid](http://startandroid.ru/ru/)
