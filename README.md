@@ -52,3 +52,5 @@ Android Studio: http://developer.android.com/sdk/index.html
 ##Java
  * [Интерактивные уроки](http://javarush.ru/)
  * [LearnJavaOnline](http://www.learnjavaonline.org/) - не компилится
+ * Java/J2EE Job Interview Companion By K.Arulkumaran
+ * [Климов](http://developer.alexanderklimov.ru/android/java/java.php)
