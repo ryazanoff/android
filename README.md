@@ -35,5 +35,5 @@ Android Studio: http://developer.android.com/sdk/index.html
 
 Полезные сайты:
  * [Доки разработчика](http://developer.android.com)
- * [Климов](http://developer.alexanderklimov.ru/android/)
- * [StartAndroid](http://startandroid.ru/ru/)
+ * [Климов](http://developer.alexanderklimov.ru/android/) - простые и наглядные уроки
+ * [StartAndroid](http://startandroid.ru/ru/) - большое количество уроков + YouTube канал
