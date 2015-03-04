@@ -29,11 +29,26 @@ Android Studio: http://developer.android.com/sdk/index.html
 ##Запуск
 
 Тестирование приложение можно делать следующими способами:
-  * Физическое устройство на андроид ( [Док](http://developer.android.com/tools/device.html) )
+  * Физическое устройство на андроид ( [Док](http://developer.android.com/tools/device.html) ,в некоторых случаях нужны драйвера)
   * Стандартные эмуляторы (Если [ругается на Intel Hax Kernel Model](http://stackoverflow.com/questions/26355645/error-in-launching-avd) , [путь к SDK](http://stackoverflow.com/questions/16581752/android-studio-how-to-change-android-sdk-path) )
   * Прочие эмуляторы (например [GenyMotion](https://www.genymotion.com) )
 
-Полезные сайты:
+##Полезные сайты:
  * [Доки разработчика](http://developer.android.com)
  * [Климов](http://developer.alexanderklimov.ru/android/) - простые и наглядные уроки
  * [StartAndroid](http://startandroid.ru/ru/) - большое количество уроков + YouTube канал
+
+##Gradle
+ Android Studio по умолчанию устанавливается с автоматической системой сборки Gradle. [Официальная страница](https://gradle.org/). В случае неправильной настройки, Gradle приводит к невозможности собрать проект. [Типичная ошибка](http://stackoverflow.com/questions/27016385/error26-0-gradle-dsl-method-not-found-runproguard). 
+ 
+ Пример подключения внешних библиотек
+ ```Java
+     compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.google.android.gms:play-services:6.+'
+```
+ 
+
+##Java
+ * [Интерактивные уроки](http://javarush.ru/)
+ * [LearnJavaOnline](http://www.learnjavaonline.org/) - не компилится
