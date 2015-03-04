@@ -33,4 +33,7 @@ Android Studio: http://developer.android.com/sdk/index.html
   * Стандартные эмуляторы (Если [ругается на Intel Hax Kernel Model](http://stackoverflow.com/questions/26355645/error-in-launching-avd) , [путь к SDK](http://stackoverflow.com/questions/16581752/android-studio-how-to-change-android-sdk-path) )
   * Прочие эмуляторы (например [GenyMotion](https://www.genymotion.com) )
 
-
+Полезные сайты:
+ * [Доки разработчика](http://developer.anroid.com)
+ * [Климов](http://developer.alexanderklimov.ru/android/)
+ * [StartAndroid](http://startandroid.ru/ru/)
