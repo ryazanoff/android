@@ -25,3 +25,12 @@ Android Studio: http://developer.android.com/sdk/index.html
 Мой курс будет вестись относительно Android Studio.
 
 Устанавливаем сначала JDK, потом Android Studio. Если при запуске Android Studio выдаёт ошибку, то необходимо задать переменную окружения `JAVA_HOME` равной пути к JDK, например `C:\Program Files\Java\jdk1.8.0_25`
+
+##Запуск
+
+Тестирование приложение можно делать следующими способами:
+*Физическое устройство на андроид ( (Док)[http://developer.android.com/tools/device.html] )
+*Стандартные эмуляторы (Если (ругается на Intel Hax Kernel Model)[http://stackoverflow.com/questions/26355645/error-in-launching-avd] , (путь к SDK)[http://stackoverflow.com/questions/16581752/android-studio-how-to-change-android-sdk-path] )
+*Прочие эмуляторы (например (GenyMotion)[https://www.genymotion.com] )
+
+
