@@ -17,6 +17,37 @@ dependencies {
 Так же тут прописываются некоторые параметры приложения - такие как номер версии и версии андроида. Так же Gradle мы будем 
 использовать для релиза приложения. Когда в градле что-то меняется необходимо синхронизовать проект.
 
+##XML
+Язык разметки. Удобен для программ и человека. Объявление XML объявляет версию языка, на которой написан документ. Поскольку интерпретация содержимого документа, вообще говоря, зависит от версии языка, то Спецификация предписывает начинать документ с объявления XML. В первой (1.0) версии языка использование объявления не было обязательным, в последующих версиях оно обязательно. Таким образом, версия языка определяется из объявления, и если объявление отсутствует, то принимается версия 1.0.
+Кроме версии XML, объявление может также содержать информацию о кодировке документа и «оставаться ли документу со своим собственным DTD, или с подключённым».
+
+В андроиде мы указываем
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+```
+Пример xml файла
+```
+<contacts>
+    <contact
+        first_name="Иван"
+        last_name="Иваненко"
+        phone="090507"/>
+    <contact
+        first_name="Василий"
+        last_name="Пупкин"
+        phone="123456"/>
+    <contact
+        first_name="Денис"
+        last_name="Денисенко"
+        phone="654879"/>
+    <contact
+        first_name="Данил"
+        last_name="Даниленко"
+        phone="234587"/>
+</contacts>
+```
+
+
 ##Manifest
 Манифест нужен для задания некоторых настроек и параметров приложения. Например:
   1. объявляет имя Java-пакета приложения, который служит уникальным идентификатором;
@@ -24,6 +55,7 @@ dependencies {
   3. ссодержит список необходимых разрешений для обращения к защищенным частям API и взаимодействия с другими приложениями;
   4. объявляет разрешения, которые сторонние приложения обязаны иметь для взаимодействия с компонентами данного приложения;
 
+Манифест является xml файлом.
 Общая структура манифеста:
 
 ```xml
@@ -81,5 +113,79 @@ dependencies {
 
 </manifest>
 ```
+
+Почти все поля являются необязательными. Работа с манифестом будет проходить по мере необходимости - когда нужно добавить какое-то разрешение или активити. 
+
+[Статья про манифест](http://developer.alexanderklimov.ru/android/theory/AndroidManifestXML.php)
+
+###Activity
+Основной единицей приложения является активити. Это по сути отдельный экран. 
+Для каждого экрана создается свой класс.
+
+Процесс создания активити можно сделать в 2 клика, но сначала сделаем разок вручную. 
+    1. Создаем файлы разметки
+Создаем в папке меню файл menu_test.xml
+
+```xml
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.ryazanoff.faceaday.TestActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
+```
+
+В папке layout activity_test.xml
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ru.ryazanoff.faceaday.TestActivity">
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+```
+    2. Создаем класс TestActivity
+    3. В описании класса наследуемся от Activity (лучше ActionBarActivity) и добавляем методы:
+```java
+    public class TestActivity extends ActionBarActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_test);
+    }
+
+    //создание меню
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_test2, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
+```
+
 
 
