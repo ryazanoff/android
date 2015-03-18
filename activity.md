@@ -187,5 +187,38 @@ dependencies {
 }
 ```
 
+    4. Изменим файл манифеста
+```xml
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait" >
+        </activity>
+```
+
+Все это можно сделать в пару кликов - просто Create New Activity
+
+Жизненный цикл активити:
+http://developer.android.com/reference/android/app/Activity.html
+Изучение поведения активити
+http://habrahabr.ru/post/201214/
+Можно делать таски, которые запретят иметь более двух сущностей одной активити
+
+###View
+
+
+###TextView 
+
+
+###Button
+
+
+###EditText
+
+###sp dp px
+http://developer.android.com/guide/practices/screens_support.html
+http://stackoverflow.com/questions/2025282/difference-between-px-dp-dip-and-sp-in-android
+http://startandroid.ru/ru/materialy/pamjatka/40-edinitsy-izmerenija-chem-otlichaetsja-dp-dip-ot-px-screen-density
+
 
 
