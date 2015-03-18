@@ -205,20 +205,34 @@ http://habrahabr.ru/post/201214/
 Можно делать таски, которые запретят иметь более двух сущностей одной активити
 
 ###View
+Класс реализующий базовые элементы интерфейса. Представлен в виде прямоугольной области. Отрисовывает элемент и обрабатывает нажатия. Является классом родителем для всех UI - элементов.
+Для всех элементов layout_width и layout_height обязательны
+
+Layout & Margin
+http://stackoverflow.com/questions/4619899/difference-between-a-views-padding-and-margin
+
+Про Frame Layout сказать что можно перекрыть элементы друг другом, а потом в настройках задавать их видимость.
 
 
 ###TextView 
+Сказать про цвета, шрифты, ссылки
 
 
 ###Button
 
 
 ###EditText
+Editable.toString
+Гравитация, много строк
+input type
+AutoCompleteTextView
 
 ###sp dp px
 http://developer.android.com/guide/practices/screens_support.html
 http://stackoverflow.com/questions/2025282/difference-between-px-dp-dip-and-sp-in-android
 http://startandroid.ru/ru/materialy/pamjatka/40-edinitsy-izmerenija-chem-otlichaetsja-dp-dip-ot-px-screen-density
+
+###List
 
 
 
