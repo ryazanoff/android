@@ -234,5 +234,8 @@ http://startandroid.ru/ru/materialy/pamjatka/40-edinitsy-izmerenija-chem-otlicha
 
 ###List
 
+###Ресурсы
+Картинки, цвета, анимации, меню, лейауты
+
 
 
