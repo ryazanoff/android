@@ -11,24 +11,24 @@ startActivity(intent);
 Первый параметр - *Context*. Activity является подклассом Context. 
 Вкратце, Context – это объект, который предоставляет доступ к базовым функциям приложения таким как: доступ к ресурсам, к файловой системе, вызов Activiy и т.д. 
 Второй параметр - имя класса. Система, просмотрев манифест определит, что нам нужно запустить новое активити. 
-
-![Явные](https://lh4.googleusercontent.com/-zJcXjNOv0wk/Ton0Jh7sU4I/AAAAAAAAAa4/8j80xc1nbGM/s800/20111003_L0022_L_ExplicitIntent.jpg "Явные")
+[https://lh4.googleusercontent.com/-zJcXjNOv0wk/Ton0Jh7sU4I/AAAAAAAAAa4/8j80xc1nbGM/s800/20111003_L0022_L_ExplicitIntent.jpg]()
 
 ###Неявные
-![Неявные](https://lh4.googleusercontent.com/-uLJgLPXCzOg/Ton0Jjr0CZI/AAAAAAAAAa8/ThvAvfrju1g/s800/20111003_L0022_L_ImplicitIntent.jpg "Неявные")
+[https://lh4.googleusercontent.com/-uLJgLPXCzOg/Ton0Jjr0CZI/AAAAAAAAAa8/ThvAvfrju1g/s800/20111003_L0022_L_ImplicitIntent.jpg]()
+
 
 http://startandroid.ru/ru/uroki/vse-uroki-spiskom/59-urok-22-intent-intent-filter-context-teorija.html
 http://developer.alexanderklimov.ru/android/theory/intent.php
 
-[http://startandroid.ru/ru/uroki/vse-uroki-spiskom/70-urok-31-zachem-u-intent-est-atribut-data-chto-takoe-uri-vyzyvaem-sistemnye-prilozhenija.html](Что такое URI и зачем это нужно)
+[Что такое URI и зачем это нужно](http://startandroid.ru/ru/uroki/vse-uroki-spiskom/70-urok-31-zachem-u-intent-est-atribut-data-chto-takoe-uri-vyzyvaem-sistemnye-prilozhenija.html)
 
 ###Диалоги и т.д.
-[http://developer.alexanderklimov.ru/android/toast.php](Всплывающие окна)
+[Всплывающие окна](http://developer.alexanderklimov.ru/android/toast.php)
 
-[http://developer.alexanderklimov.ru/android/alertdialog.php](АлертДиалоги)
+[АлертДиалоги](http://developer.alexanderklimov.ru/android/alertdialog.php)
 
-[http://stackoverflow.com/questions/13341560/how-to-create-a-custom-dialog-box-in-android](Создание кастомного диалога)
+[Создание кастомного диалога](http://stackoverflow.com/questions/13341560/how-to-create-a-custom-dialog-box-in-android)
 
-[http://developer.android.com/guide/topics/ui/dialogs.html](Ман от гугла)
+[Ман от гугла](http://developer.android.com/guide/topics/ui/dialogs.html)
 
-[http://habrahabr.ru/post/166469/](Статья на хабре)
+[Статья на хабре](http://habrahabr.ru/post/166469/)
