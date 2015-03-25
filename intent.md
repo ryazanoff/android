@@ -4,6 +4,7 @@
 Бывают двух типов - явные (Explicit) и неявные (Implicit)
 
 ###Явные
+![Явные](https://lh4.googleusercontent.com/-zJcXjNOv0wk/Ton0Jh7sU4I/AAAAAAAAAa4/8j80xc1nbGM/s800/20111003_L0022_L_ExplicitIntent.jpg] "Явные")
 ```java
 Intent intent = new Intent(HelloWorld.this, AboutActivity.class);
 startActivity(intent);
@@ -11,7 +12,7 @@ startActivity(intent);
 Первый параметр - *Context*. Activity является подклассом Context. 
 Вкратце, Context – это объект, который предоставляет доступ к базовым функциям приложения таким как: доступ к ресурсам, к файловой системе, вызов Activiy и т.д. 
 Второй параметр - имя класса. Система, просмотрев манифест определит, что нам нужно запустить новое активити. 
-![Явные](https://lh4.googleusercontent.com/-zJcXjNOv0wk/Ton0Jh7sU4I/AAAAAAAAAa4/8j80xc1nbGM/s800/20111003_L0022_L_ExplicitIntent.jpg] "Явные")
+
 
 ###Неявные
 ![Неявные](https://lh4.googleusercontent.com/-uLJgLPXCzOg/Ton0Jjr0CZI/AAAAAAAAAa8/ThvAvfrju1g/s800/20111003_L0022_L_ImplicitIntent.jpg] "Неявные")
