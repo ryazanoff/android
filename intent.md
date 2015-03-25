@@ -41,4 +41,5 @@ http://habrahabr.ru/post/133307/
 
 ###9 patch
 http://habrahabr.ru/post/113623/
+
 http://romannurik.github.io/AndroidAssetStudio/nine-patches.html
