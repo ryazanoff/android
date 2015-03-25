@@ -24,12 +24,12 @@ http://developer.alexanderklimov.ru/android/theory/intent.php
 [Что такое URI и зачем это нужно](http://startandroid.ru/ru/uroki/vse-uroki-spiskom/70-urok-31-zachem-u-intent-est-atribut-data-chto-takoe-uri-vyzyvaem-sistemnye-prilozhenija.html)
 
 ##Диалоги и всплывающие окна
+
+[Всплывающие окна](http://developer.alexanderklimov.ru/android/toast.php)
 Создание всплывающего окна одной строкой:
 ```java
 Toast.makeText(getApplicationContext(), "Text",Toast.LENGTH_LONG).show();
 ```
-
-[Всплывающие окна](http://developer.alexanderklimov.ru/android/toast.php)
 
 [АлертДиалоги](http://developer.alexanderklimov.ru/android/alertdialog.php)
 
