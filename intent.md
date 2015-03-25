@@ -22,3 +22,13 @@ http://developer.alexanderklimov.ru/android/theory/intent.php
 
 [http://startandroid.ru/ru/uroki/vse-uroki-spiskom/70-urok-31-zachem-u-intent-est-atribut-data-chto-takoe-uri-vyzyvaem-sistemnye-prilozhenija.html](Что такое URI и зачем это нужно)
 
+###Диалоги и т.д.
+[http://developer.alexanderklimov.ru/android/toast.php](Всплывающие окна)
+
+[http://developer.alexanderklimov.ru/android/alertdialog.php](АлертДиалоги)
+
+[http://stackoverflow.com/questions/13341560/how-to-create-a-custom-dialog-box-in-android](Создание кастомного диалога)
+
+[http://developer.android.com/guide/topics/ui/dialogs.html](Ман от гугла)
+
+[http://habrahabr.ru/post/166469/](Статья на хабре)
