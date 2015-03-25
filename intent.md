@@ -23,7 +23,7 @@ http://developer.alexanderklimov.ru/android/theory/intent.php
 
 [Что такое URI и зачем это нужно](http://startandroid.ru/ru/uroki/vse-uroki-spiskom/70-urok-31-zachem-u-intent-est-atribut-data-chto-takoe-uri-vyzyvaem-sistemnye-prilozhenija.html)
 
-###Диалоги и т.д.
+##Диалоги и всплывающие окна
 [Всплывающие окна](http://developer.alexanderklimov.ru/android/toast.php)
 
 [АлертДиалоги](http://developer.alexanderklimov.ru/android/alertdialog.php)
@@ -34,13 +34,13 @@ http://developer.alexanderklimov.ru/android/theory/intent.php
 
 [Статья на хабре](http://habrahabr.ru/post/166469/)
 
-###Меню
+##Меню
 http://developer.alexanderklimov.ru/android/menu.php
 
-###Темы и стили
+##Темы и стили
 http://habrahabr.ru/post/133307/
 
-###9 patch
+##9 patch
 http://habrahabr.ru/post/113623/
 
 http://romannurik.github.io/AndroidAssetStudio/nine-patches.html
