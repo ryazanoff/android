@@ -1,4 +1,4 @@
-[Создание кастомного списка](http://habrahabr.ru/post/133575/) , для этого полезно почитать про [Обобщения(Generic)](http://developer.alexanderklimov.ru/android/java/generic.php)
+[Создание кастомного списка](http://habrahabr.ru/post/133575/) , перед этим полезно почитать про [Обобщения(Generic)](http://developer.alexanderklimov.ru/android/java/generic.php)
 
 ##Intent
 Намерения - позволяют запускать различные компоненты - фотографии, отправить письмо, браузер, звонок. Наиболее распространенный
