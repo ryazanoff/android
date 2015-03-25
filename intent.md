@@ -32,3 +32,13 @@ http://developer.alexanderklimov.ru/android/theory/intent.php
 [Ман от гугла](http://developer.android.com/guide/topics/ui/dialogs.html)
 
 [Статья на хабре](http://habrahabr.ru/post/166469/)
+
+###Меню
+http://developer.alexanderklimov.ru/android/menu.php
+
+###Темы и стили
+http://habrahabr.ru/post/133307/
+
+###9 patch
+http://habrahabr.ru/post/113623/
+http://romannurik.github.io/AndroidAssetStudio/nine-patches.html
