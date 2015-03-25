@@ -54,4 +54,12 @@ http://romannurik.github.io/AndroidAssetStudio/nine-patches.html
 
 ##Задание
 Сделать приложение-камеру. Есть 2 кнопки - сделать снимок и поделиться фото.
-При нажатии "сделать сником" вызывается приложение камеры, которое возвращает фото, которое помещается в ImageView. При нажатии кнопки "поделиться" появляется стандартный список приложений, который умеет шейрить фото.
+При нажатии "сделать снимок" вызывается приложение камеры, которое возвращает фото, которое помещается в ImageView. При нажатии кнопки "поделиться" появляется стандартный список приложений, который умеет шейрить фото.
+
+Полезные ссылки по заданию:
+
+http://startandroid.ru/ru/uroki/vse-uroki-spiskom/254-urok-131-kamera-ispolzuem-sistemnoe-prilozhenie.html
+
+http://stackoverflow.com/questions/17160593/how-to-attach-a-bitmap-when-launching-action-send-intent
+
+http://stackoverflow.com/questions/12555420/how-to-get-a-uri-object-from-bitmap
