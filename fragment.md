@@ -21,6 +21,7 @@ android.app.FragmentTransaction — ну и этот класс, как поня
 
 Создаем 2 layout для фрагментов.
 
+fragment1.xml
 ```xml
   <?xml version="1.0" encoding="utf-8"?>
   <LinearLayout
@@ -38,6 +39,7 @@ android.app.FragmentTransaction — ну и этот класс, как поня
   </LinearLayout>
 ```
 
+fragment2.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
@@ -52,5 +54,178 @@ android.app.FragmentTransaction — ну и этот класс, как поня
  android:layout_height="wrap_content"
  android:text="Fragment 2">
 </TextView>
+</LinearLayout>
+```
+
+У каждого фрагмента обязательно должен быть свой класс
+
+```java
+import android.app.Activity;
+import android.app.Fragment;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class Fragment1 extends Fragment {
+
+  final String LOG_TAG = "myLogs";
+
+  @Override
+  public void onAttach(Activity activity) {
+    super.onAttach(activity);
+    Log.d(LOG_TAG, "Fragment1 onAttach");
+  }
+
+  public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    Log.d(LOG_TAG, "Fragment1 onCreate");
+  }
+
+  public View onCreateView(LayoutInflater inflater, ViewGroup container,
+      Bundle savedInstanceState) {
+    Log.d(LOG_TAG, "Fragment1 onCreateView");
+    return inflater.inflate(R.layout.fragment1, null);
+  }
+
+  public void onActivityCreated(Bundle savedInstanceState) {
+    super.onActivityCreated(savedInstanceState);
+    Log.d(LOG_TAG, "Fragment1 onActivityCreated");
+  }
+
+  public void onStart() {
+    super.onStart();
+    Log.d(LOG_TAG, "Fragment1 onStart");
+  }
+
+  public void onResume() {
+    super.onResume();
+    Log.d(LOG_TAG, "Fragment1 onResume");
+  }
+
+  public void onPause() {
+    super.onPause();
+    Log.d(LOG_TAG, "Fragment1 onPause");
+  }
+
+  public void onStop() {
+    super.onStop();
+    Log.d(LOG_TAG, "Fragment1 onStop");
+  }
+
+  public void onDestroyView() {
+    super.onDestroyView();
+    Log.d(LOG_TAG, "Fragment1 onDestroyView");
+  }
+
+  public void onDestroy() {
+    super.onDestroy();
+    Log.d(LOG_TAG, "Fragment1 onDestroy");
+  }
+
+  public void onDetach() {
+    super.onDetach();
+    Log.d(LOG_TAG, "Fragment1 onDetach");
+  }
+}
+```
+
+```java
+import android.app.Activity;
+import android.app.Fragment;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class Fragment2 extends Fragment {
+
+  final String LOG_TAG = "myLogs";
+  
+  @Override
+  public void onAttach(Activity activity) {
+    super.onAttach(activity);
+    Log.d(LOG_TAG, "Fragment2 onAttach");
+  }
+  
+  public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    Log.d(LOG_TAG, "Fragment2 onCreate");
+  }
+  
+  public View onCreateView(LayoutInflater inflater, ViewGroup container,
+      Bundle savedInstanceState) {
+    Log.d(LOG_TAG, "Fragment2 onCreateView");
+    return inflater.inflate(R.layout.fragment2, null) ;
+  }
+  
+  public void onActivityCreated(Bundle savedInstanceState) {
+    super.onActivityCreated(savedInstanceState);
+    Log.d(LOG_TAG, "Fragment2 onActivityCreated");
+  }
+  
+  public void onStart() {
+    super.onStart();
+    Log.d(LOG_TAG, "Fragment2 onStart");
+  }
+  
+  public void onResume() {
+    super.onResume();
+    Log.d(LOG_TAG, "Fragment2 onResume");
+  }
+  
+  public void onPause() {
+    super.onPause();
+    Log.d(LOG_TAG, "Fragment2 onPause");
+  }
+  
+  public void onStop() {
+    super.onStop();
+    Log.d(LOG_TAG, "Fragment2 onStop");
+  }
+  
+  public void onDestroyView() {
+    super.onDestroyView();
+    Log.d(LOG_TAG, "Fragment2 onDestroyView");
+  }
+  
+  public void onDestroy() {
+    super.onDestroy();
+    Log.d(LOG_TAG, "Fragment2 onDestroy");
+  }
+  
+  public void onDetach() {
+    super.onDetach();
+    Log.d(LOG_TAG, "Fragment2 onDetach");
+  }
+}
+```
+
+activity_main.xml
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <fragment
+        android:name="com.example.lenovo.fragmenttest.Fragment1"  <!--Ваш пакет.Класс фрагмента -->
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment1">
+    </fragment>
+    <fragment
+        android:name="com.example.lenovo.fragmenttest.Fragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment2">
+    </fragment>
 </LinearLayout>
 ```
