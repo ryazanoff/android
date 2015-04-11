@@ -244,5 +244,9 @@ ActionBarActivity наследуется от FragmentActivity
 
 Более подробно про передачу данных между фрагментами и активити можно почитать в [этом уроке](http://startandroid.ru/ru/uroki/vse-uroki-spiskom/176-urok-106-android-3-fragments-vzaimodejstvie-s-activity.html)
 
-### 3 пример - список
-Реализация viewPager
+### 3 пример - слайдинг экранов
+
+[Реализация viewPager](http://developer.android.com/training/animation/screen-slide.html)
+
+
+
