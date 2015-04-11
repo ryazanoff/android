@@ -232,3 +232,17 @@ activity_main.xml
 
 
 ###Fragment - второй пример
+
+Сохраним наши классы фрагментов и разметку для них.
+Скопипастим активити и разметку из урока для гугла. Cannot resolve method add. Изменим getSupporFragment на getFragmentManager , т.к. иначе мы мешаем классы из разных библиотек. 
+
+ActionBarActivity наследуется от FragmentActivity
+
+Взамодействие фрагмента и активити. Вызов метода фрагмента из активити - через экзмепаляр.
+
+Вызов метода активити из фрагмента. Получаем активити методом getActivity
+
+Более подробно про передачу данных между фрагментами и активити можно почитать в [этом уроке](http://startandroid.ru/ru/uroki/vse-uroki-spiskom/176-urok-106-android-3-fragments-vzaimodejstvie-s-activity.html)
+
+### 3 пример - список
+Реализация viewPager
